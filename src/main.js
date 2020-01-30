@@ -1,6 +1,7 @@
 // Webpack looks into node modules for the vue folder (vue js library) then imports it. 
 import Vue from 'vue'; 
 import App from './App'; // relative path required
+require('dotenv').config();
 
 new Vue({
     // el: '#app', same as .$mount('#app')

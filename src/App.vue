@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <SearchBar @termChange="onTermChange"></SearchBar>
         <VideoList :videos="videos"></VideoList>
     </div> 
@@ -10,10 +10,11 @@
 <script>
 import axios from 'axios';
 import SearchBar from './components/SearchBar';
-import VideoList from './components/VideoList'
+import VideoList from './components/VideoList';
 
 
-const API_KEY = 'AIzaSyDcRLL5jm1a0FCsP3_SetlyOzmHe6ztKVA';
+
+const API_KEY = process.env.VUE_APP_API_KEY;
 
 export default {
     name: 'App',
