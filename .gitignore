@@ -19,3 +19,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+API_KEY = 'AIzaSyDcRLL5jm1a0FCsP3_SetlyOzmHe6ztKVA';
